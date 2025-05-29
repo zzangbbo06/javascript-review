@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    // 자바스크립트는 변수 선언은 let, const, var, 
+    // 넣는 값에 따라 자료형 결정되어짐
+    // 1) String(문자열) -> "", '',`` 3가지 다 가능
+    const name1 = "Jang bo Yeong";
+    const name2 = '장보영';
+    const name3 = `장보영`;
+    
+    document.write(name1, "<br>");
+     // 인자들을 넣어주는것인데, 인자 = 함수에 넘겨주는 값을 의미
+    // document.write("내용")은 브라우저 화면에 HTML 코드처럼 직접 출력합니다.
+    document.write(name2, "<br>");
+    document.write(name3, "<br>");
+
+    // 문자열 안에서 큰따옴표 안에 작은 따옴표를 사용하는 방법은?
+    // 넣고자 하는 따옴표가 아닌 다른 따옴표로 전체를 감싸고 넣고자 하는 따옴표를 안에다가 쓰면 된다.
+    const singleQuote = "He is called 'BoYeong'"
+    const doubleQuote = 'He is called "BoYeong"';
+
+    document.write(singleQuote, "<br>");
+    document.write(doubleQuote, "<br>");
+
+    // 이스케이프 문자(\)를 사용하면 해결
+    // => \뒤에 오는 특수문자를 일반 문자로 사용할 수 있게 해줌 -> 시작지점 바로 전부터 끝 지점 바로 전까지 \ 표시
+    const singleQuote2 = "He is called \"BoYeong\"";
+    const doubleQuote2 = 'He is called \"BoYeong\"';
+
+    document.write(singleQuote2, "<br>");
+    document.write(doubleQuote2, "<br>");
+
+    const name = 'Bo Yeong';
+    document.write('Hello ' + name + '<br>');
+    document.write(`Hello ${name} <br>`);
+    document.write("Hello");
+    // 문자열을 넣으면 문자열 출력
+    // 일반적으로는 + 로 문자열 연결
+  </script>
+</body>
+</html>
